@@ -25,8 +25,8 @@ SECRET_KEY = secret.key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = []
+#  This is needed otherwise mariadb won't work
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
@@ -77,8 +77,13 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'portfoliodb',
+        'USER': 'lucian',
+        'PASSWORD': secret.password,
+        # You have to set the host to this ortherwise it won't connect
+        'HOST': '/run/mysqld/mysqld.sock',
+        'PORT': '3306',
     }
 }
 
