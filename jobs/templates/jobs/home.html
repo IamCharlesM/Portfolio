@@ -49,11 +49,11 @@
                 </p>
                 <img src="{%static 'smol.JPG' %}" height="300" />
             </div>
+            
         </section>
-
+        <div class="text-center"><h1>Wanna know what I've been up to lately?</h1></div>
         <div class="album py-5 bg-light">
             <div class="container">
-
                 <div class="row">
 
                     {% for job in jobs.all %}
@@ -61,7 +61,8 @@
                         <div class="card mb-4 box-shadow">
                             <img class="card-img-top" src="{{job.image.url}}">
                             <div class="card-body">
-                                <p class="card-text">{{ job.summary }}</p>
+                                
+                                <p class="card-text"><h6>{{ job.title}} <br><small class="text-muted">{{ job.summary }}</small></h6></p>
                             </div>
                         </div>
                     </div>
