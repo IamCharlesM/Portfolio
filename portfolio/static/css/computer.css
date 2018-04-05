@@ -1,0 +1,36 @@
+.draggable {
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.window-nav {
+    background-color: black;
+    height: 5vh;
+}
+
+#desktop {
+    background-image: url(/static/images/powerlvl-shi.jpg);
+    background-size: cover;
+    background-color: indianred;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.dock-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 20;
+    white-space: nowrap;
+    
+    
+}
+
+.fa-2x {
+    color: blanchedalmond
+}
+
+.close-window {
+    color: red;
+    
+}
+
