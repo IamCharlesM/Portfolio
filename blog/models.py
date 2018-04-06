@@ -1,8 +1,10 @@
 from django.db import models
+from django.core.validators import URLValidator
 
 class Blog(models.Model):
     title = models.CharField(max_length=255)
     pub_date = models.DateTimeField()
+    url = models.TextField( default='link pls')
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
 
