@@ -8,8 +8,9 @@
 __pycache__/
 local_settings.py
 db.sqlite3
-# /media
-# /portfolio/static
+/media
+/portfolio/static
+/static
 secret.py
 /portfolio/static/images
 
