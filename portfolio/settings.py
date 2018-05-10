@@ -32,6 +32,10 @@ ALLOWED_HOSTS = ['localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'battle.apps.BattleConfig',
+    'producthunt.apps.ProducthuntConfig',
+    'products.apps.ProductsConfig',
+    'accounts.apps.AccountsConfig',
     'blog.apps.BlogConfig',
     'jobs.apps.JobsConfig',
     'django.contrib.admin',
