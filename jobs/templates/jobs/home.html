@@ -16,40 +16,27 @@
         crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
-
+    <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="{% url 'home' %}">I Am Charles</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto">
-
-                    <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
-                    <a class="nav-item nav-link" href="{% url 'allblogs' %}">Project Details</a>
-
-                </div>
-            </div>
-        </nav>
+        
     </header>
 
-    <main role="main">
-
-        <section class="jumbotron text-center">
-            <div class="container">
-                <h1 class="jumbotron-heading">Welcome to my humble abode.</h1>
-                <p class="lead text-muted">Make sure you remember who I am , because there's gonna be a test on this later. &#x1F639;</p>
-                <p>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-secondary my-2" data-toggle="modal" data-target="#contact">
+    <main role="main " class="conainer-fluid  align-items-center">
+        <div class="col text-center verticle">
+            <div class="">
+                <h1>Charles M<span class="align-top">c</span>Gregory</h1>
+            </div>
+            <div class="links">
+                <a class="" href="{% static 'resume.pdf' %}">Resume</a> /
+                <a class="" href="{% url 'allblogs' %}">Project Details</a> /
+                <!-- Button trigger modal -->
+                <a  class="" data-toggle="modal" data-target="#contact">
                         Contact Me.
-                    </button>
+                </a>
 
                     <!-- Modal -->
                     <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
@@ -69,49 +56,12 @@
                             </div>
                         </div>
                     </div>
-                </p>
-                <img src="{%static 'smol.JPG' %}" height="300" />
-            </div>
-
-        </section>
-        <div class="text-center">
-            <h1>Wanna know what I've been up to lately?</h1>
-        </div>
-        <div class="album py-5 bg-light">
-            <div class="container">
-                <div class="row">
-
-                    {% for job in jobs.all %}
-
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <img class="card-img-top" src="{{job.image.url}}">
-                            <div class="card-body">
-
-                                <p class="card-text">
-                                    <h6>{{ job.title}}
-                                        <br>
-                                        <small class="text-muted">
-                                            <a href="http://charlesis.me/blog/{{ job.id }}">{{ job.summary }}</a>
-                                        </small>
-                                    </h6>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    {% endfor %}
-                </div>
             </div>
         </div>
-
+            
     </main>
 
-    <footer class="text-muted">
-        <div class="container text-center">
-            <p> &#x00A9; Charles McGregory {% now "Y" %}</p>
-        </div>
-    </footer>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
