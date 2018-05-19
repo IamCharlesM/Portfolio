@@ -18,18 +18,17 @@
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
+     <!-- Vuejs  -->
+<script src="{% static 'js/vue.js' %}"></script>
 </head>
 
 <body>
-
-    <header>
-        
-    </header>
-
-    <main role="main " class="conainer-fluid  align-items-center">
+    <main role="main " class="conainer-fluid  align-items-center" id="app">
         <div class="col text-center verticle">
             <div class="">
                 <h1>Charles M<span class="align-top">c</span>Gregory</h1>
+                <h4>A full-stack web developer by day, cat herder by night. 😺 </h4>
             </div>
             <div class="">
                 <a class="links" href="{% static 'resume.pdf' %}">Hire Me</a> /
@@ -73,6 +72,10 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<!-- Custom scripts -->
+
+<script src="{% static 'js/portfolio.js' %}"></script>
+        
 </body>
 
 </html>
