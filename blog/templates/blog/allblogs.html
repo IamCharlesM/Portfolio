@@ -1,21 +1,26 @@
 {% extends 'jobs/home.html' %} 
 
 {% block content %}
-   
-            <h1 class="text-center pt-3">Just a place with more details, click something,</h1>
-            <br>
-            <br>
-            <h2>Most recent thoughts.</h2>
-            <hr> {% for blog in blogs.all%}
-            <a href="{% url 'detail' blog.id %}">
-                <h3>{{blog.title}}</h3>
-            </a>
-            <img src="{{ blog.image.url }}" class="img-fluid" height="200" width="200">
-            <br>
-            <p>{{ blog.summary }}</p>
-            {{blog.pub_date_pretty}}
-            <br> 
-        {%endfor%}
+{% for job in jobs.all %}
+
+<div class="col-md-4">
+    <div class="card mb-4 box-shadow">
+        <img class="card-img-top" src="{{job.image.url}}">
+        <div class="card-body">
+
+            <p class="card-text">
+                <h6>{{ job.title}}
+                    <br>
+                    <small class="text-muted">
+                        <a href="http://charlesis.me/blog/{{ job.id }}">{{ job.summary }}</a>
+                    </small>
+                </h6>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
            
            
  {% endblock content %}

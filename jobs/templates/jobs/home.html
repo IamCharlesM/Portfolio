@@ -28,7 +28,7 @@
     <main role="main " class="conainer-fluid  align-items-center" id="app">
         <div class="col text-center verticle">
             <div class="">
-                <h1>Charles M<span class="align-top">c</span>Gregory</h1>
+                <a href="{% url 'home'%}"> <h1>Charles M<span class="align-top">c</span>Gregory</h1></a>
                 <h4 class="animated fadeIn">A full-stack web developer by day, cat herder by night. 😺 </h4>
             </div>
             <div class="">
@@ -62,6 +62,7 @@
 
      <div class="container">
         {% block content%}
+        
         {% endblock %}
 
      </div>
