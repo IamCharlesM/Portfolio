@@ -16,6 +16,7 @@
         crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
 
@@ -28,7 +29,7 @@
         <div class="col text-center verticle">
             <div class="">
                 <h1>Charles M<span class="align-top">c</span>Gregory</h1>
-                <h4>A full-stack web developer by day, cat herder by night. 😺 </h4>
+                <h4 class="animated fadeIn">A full-stack web developer by day, cat herder by night. 😺 </h4>
             </div>
             <div class="">
                 <a class="links" href="{% static 'resume.pdf' %}">Hire Me</a> /
@@ -57,7 +58,7 @@
                         </div>
                     </div>
             </div>
-        </div> <!-- ends nav -->
+        </div> 
 
      <div class="container">
         {% block content%}
