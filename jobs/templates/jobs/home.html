@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="{% static 'css/portfolio.css' %}">
     <link href='https://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
 
-     <!-- Vuejs  -->
-<script src="{% static 'js/vue.js' %}"></script>
 </head>
 
 <body>
@@ -29,15 +27,12 @@
         <div class="col text-center verticle">
             <div class="">
                 <a href="{% url 'home'%}"> <h1>Charles M<span class="align-top">c</span>Gregory</h1></a>
-                <h4 class="animated fadeIn">A full-stack web developer by day, cat herder by night. 😺 </h4>
+                <h4 class="animated fadeIn text-justify ">I am a full-stack web developer by day, cat herder by night. I have an eye for noninvasive and minimalist design with a focus on functionality which is reflected in <a class="links" href="{% url 'allblogs' %}">my work</a>, while I prefer to focus on Python I also have experience with Ruby, as well as Javascript as well as it’s front end frameworks such as Angular, React, and Vue, I’m pretty much an open book so feel free to check out <a class="links" href="{% static 'resume.pdf' %}">my resume </a>when you get the chance. I am currently available for hire so if you’re looking for a multi-talented developer you can feel free to <!-- Button trigger modal --> <a  class="links" href="" data-toggle="modal" data-target="#contact">contact me </a>at any time</h4>
             </div>
             <div class="">
-                <a class="links" href="{% static 'resume.pdf' %}">My Resume</a> /
-                <a class="links" href="{% url 'allblogs' %}">My Work</a> /
-                <!-- Button trigger modal -->
-                <a  class="links" href="" data-toggle="modal" data-target="#contact">
-                        My Info
-                </a>
+
+                
+
 
                     <!-- Modal -->
                     <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
