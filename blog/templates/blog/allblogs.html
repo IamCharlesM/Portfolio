@@ -4,19 +4,19 @@
 {% for job in jobs.all %}
 
 <div class="col-md-4 ">
-    <div class="card mb-4 box-shadow">
+        <a href="http://charlesis.me/blog/{{ job.id }}"><div class="card mb-4 box-shadow">
         <img class="card-img-top" src="{{job.image.url}}">
         <div class="card-body">
             <p class="card-text">
                 <h3>{{ job.title}}</h3>
                     <br>
                     <div class="text-muted">
-                        <h5><a href="http://charlesis.me/blog/{{ job.id }}">{{ job.summary }}</a></h5>
+                        <h5>{{ job.summary }}</h5>
                     </div>
                 </h6>
             </p>
         </div>
-    </div>
+    </div></a>
 </div>
 {% endfor %}
            
