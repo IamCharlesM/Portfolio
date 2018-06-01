@@ -1,0 +1,33 @@
+{% extends 'jobs/home.html' %} 
+
+{% block content %}
+
+<main role="main " class="conainer-fluid" id="app">
+    <div class="container text-center verticle">
+        
+        <div class="mx-auto">
+            <h4 class="animated fadeIn text-justify ">I am a full-stack web developer by day, cat herder by night. I have an eye for noninvasive and minimalist design with a focus on functionality which is reflected in <a class="links" href="{% url 'allblogs' %}">my work</a>, while I prefer to focus on Python I also have experience with Ruby, as well as Javascript as well as it’s front end frameworks such as Angular, React, and Vue, I’m pretty much an open book so feel free to check out <a class="links" href="{% static 'resume.pdf' %}">my resume </a>when you get the chance. I am currently available for hire so if you’re looking for a multi-talented developer you can feel free to <!-- Button trigger modal --> <a  class="links" href="" data-toggle="modal" data-target="#contact">contact me </a>at any time</h4>
+        </div>
+        <div class="">
+                <!-- Modal -->
+                <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="contactTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title ml-auto" id="contactLongTitle">Contact Information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Pick your method</h3>
+                                <p>because@charlesis.me | <img src="{%static 'qrcode.png' %}'" alt="QR Code"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div> 
+
+    {% endblock content %}
