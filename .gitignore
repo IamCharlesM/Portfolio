@@ -10,6 +10,7 @@ local_settings.py
 db.sqlite3
 /media
 /portfolio/static
+temp_auto_push.bat
 /static
 secret.py
 /portfolio/static/images
@@ -23,3 +24,4 @@ secret.py
 # End of https://www.gitignore.io/api/django
 
 
+branch_structure.json
